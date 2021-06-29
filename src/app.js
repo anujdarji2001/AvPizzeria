@@ -19,7 +19,7 @@ const expressLayout=require("express-ejs-layouts");
 const passport = require('passport');
 const moment = require('moment');
 const Emitter = require('events');
-
+app.locals.moment = require('moment')
 
 //Middleware
 const guest = require('../public/js/middleware/guest');
@@ -230,6 +230,9 @@ app.post("/update-cart",(req,res)=> {
     }
     return res.json({ totalQty: req.session.cart.totalQty})
 })
+
+
+
 
 app.post("/orders",auth,(req,res)=> {
     

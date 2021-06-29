@@ -185,7 +185,6 @@ $('.add_to_cart').click(function(){
 
 });
 
-
 // Change Order Status
 
 let statuses= document.querySelectorAll('.status_line')
