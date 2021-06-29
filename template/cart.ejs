@@ -5,6 +5,10 @@
         <div class="flex item-center border-b border-gray-300 pb-4">
             <img src="img/cart-black.png" alt="cart">
             <h1 class="font-bold ml-4 ordersummaryheading">Order Summary</h1>
+            <a href="/clearcart" class="aclearcart"><button class="deletefromcart py-1 px-6 rounded-full flex item-center font-bold" id="addtocartbtn">
+                <span>Clear Cart</span>
+            </button>
+        </a>
         </div>
         <div class="pizza-list">
             <% for (let pizza of Object.values(session.cart.items)) { %>
@@ -18,11 +22,6 @@
                         <span class="flex-1 summryqty"><%= pizza.qty %> Pcs</span>
                         <span class="font-bold summryprice">₹<%= pizza.item.price * pizza.qty %></span>
                     </div>
-                    <!-- <div class="ml-5 mt-10 xl:mt-20">
-                        <button class="deletefromcart py-1 px-6 rounded-full flex item-center font-bold" id="addtocartbtn">
-                            <span>Delete</span>
-                        </button>
-                    </div> -->
                 </div>
             <% } %>
         </div>

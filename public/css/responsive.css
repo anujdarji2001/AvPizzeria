@@ -133,6 +133,11 @@
         margin-left: 2rem;
     }
 
+    .deletefromcart {
+        margin-left: 7rem;
+        margin-top: 0.3rem;
+    }
+
     table {
         display: block;
         overflow-x: auto;
@@ -313,6 +318,11 @@
         font-size: 2rem;
     }
 
+    .deletefromcart {
+        margin-left: 50rem;
+        margin-top: 0.3rem;
+    }
+
     .orderheading {
         font-size: 3.5rem;
     }
@@ -483,6 +493,10 @@
         background: #fff;
     }
 
+    .deletefromcart {
+        margin-left: 65rem;
+        margin-top: 0.3rem;
+    }
 
     .status-box ul li span:before{
         left: -110px;

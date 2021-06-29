@@ -231,8 +231,11 @@ app.post("/update-cart",(req,res)=> {
     return res.json({ totalQty: req.session.cart.totalQty})
 })
 
+app.get("/clearcart",(req,res)=> {
 
-
+    delete req.session.cart;
+    res.redirect('/cart')
+})
 
 app.post("/orders",auth,(req,res)=> {
     

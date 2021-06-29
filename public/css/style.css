@@ -563,12 +563,16 @@ input::placeholder{
     box-shadow: 0 9px 6px -6px #000;
 }
 
+.order a{
+    text-decoration: none;
+}
 
 .deletefromcart {
     border: 2px solid #ff5225;
     color: #ff5225;
     transition: smooth;
     font-size: 1.3rem;
+    margin-left: 40rem;
 }
 
 .deletefromcart:focus {
