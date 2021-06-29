@@ -2,7 +2,10 @@ require('dotenv').config();
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 1111;
+const mongoose = require("mongoose");
 require("./db/conn")
+
+const DB = process.env.DATABASE
 
 const Menu =  require("./models/menu");
 const Register =  require("./models/user");
@@ -47,7 +50,7 @@ app.use(express.json());
 // Session Store
 
 const mongoStore =  new MongoDbStore({
-    uri: 'mongodb://localhost:27017/pizzamern',
+    uri: DB,
     collection: 'sessions'
 })
 

@@ -1,10 +1,14 @@
 //DB Connection
-
+require('dotenv').config();
 const mongoose = require("mongoose");
-const conn = mongoose.connect("mongodb://localhost:27017/pizzamern",{
+
+const DB = process.env.DATABASE
+
+const conn = mongoose.connect(DB,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
-    useCreateIndex:true
+    useCreateIndex:true,
+    useFindAndModify:false
 }).then(()=> {
     console.log("connection sucessful");
 }).catch((e)=> {
